@@ -1,3 +1,8 @@
+html {
+  height: auto;
+  background-image: linear-gradient(to bottom, white, #6a737db0);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,10 +41,11 @@
   
   .resume {
     margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    border: 1px solid white;
+    box-shadow: 1px 1px 7px 7px #6a737db0;
     padding: 30px 0;
     max-width: 900px;
+    background-color: white;
   }
   
   .resume__block {
@@ -48,7 +54,7 @@
     margin-bottom: 15px;
   }
   
-  @media screen and (max-width: 576px) {
+  @media screen and (width <= 576px) {
     .main-info,
     .contact_info_container {
       flex-direction: column;
@@ -156,6 +162,7 @@
 .intro_text {
   color: var(--secondary-text-color);
   text-align: justify;
+  font-family: Menlo-Regular;
 }
 
 .skills__header {
@@ -167,6 +174,7 @@
 .skills__text {
   color: var(--secondary-text-color);
   text-align: justify;
+  font-family: Menlo-Regular;
 }
 
 .experiences {
@@ -216,6 +224,7 @@
 .experiences__company-project-responsibilities {
   color: var(--secondary-text-color);
   padding-left: 20px;
+  font-family: Menlo-Regular;
 }
 
 .additional-info {
@@ -247,25 +256,34 @@
 
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
+  font-family: Menlo-Regular;
 }
 
-.additional-info__languages {
+.additional-info__languages, 
+.additional-info__hobbies,
+.additional-info__certifications {
   margin-bottom: 20px;
 }
 
-.additional-info__languages-header {
+.additional-info__languages-header, .additional-info__hobbies-header, .additional-info__certifications-header {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
 }
 
-.additional-info__languages-item {
+.additional-info__languages-item, .additional-info__hobbies-item, .additional-info__certifications-item {
   color: var(--secondary-text-color);
+  font-family: Menlo-Regular;
 }
 
 @font-face {
   font-family: PPNeueMontreal-Medium;
-  src: url("./assets/fonts/PPNeueMontreal-Medium.otf");
+  src: url("./assets/fonts/PPNeueMontreal-Medium.ttf");
+}
+
+@font-face {
+  font-family: Menlo-Regular;
+  src: url("./assets/fonts/Menlo-Regular.ttf");
 }
 
 @keyframes morph {
